@@ -1,5 +1,5 @@
 package Lambda;
-
+.
 import java.util.function.*;
 
 public class BuiltinFunctionalInterface {
