@@ -1,28 +1,31 @@
 package com.hcld2.jwtdemo.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Entity 
-@Table (name = "posts")
-@NoArgsConstructor 
+import java.time.LocalDateTime;
+
+@Entity
+@Getter
+@NoArgsConstructor
 @AllArgsConstructor
-
 public class Post {
-    @Id 
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column (nullable = false)
+    @Column(nullable = false)
     private String title;
-    @Column (nullable = false)
+    @Column(length = 2000)
     private String content;
-    @Column (nullable = false)
+    @Column(nullable = false)
     private String author;
+    private LocalDateTime createdAt=LocalDateTime.now();
 
-    
+    public Post(String title, String content, String author) {
+        this.title = title;
+        this.author=author;
+        this.content = content;
+    }
 }

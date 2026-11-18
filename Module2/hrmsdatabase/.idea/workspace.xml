@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7076d0dc-8514-4559-9aa3-d461f20b7383" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsdatabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsdatabase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsdatabase/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsdatabase/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/java/com/hcld2/jwtdemo/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/JwtDemo/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
