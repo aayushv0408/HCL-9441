@@ -1,26 +1,34 @@
+import { greet, greetInHindi, processOrder } from "/App.js";
+import { describe, mock, test } from "node:test";
+import assert from "node:assert";
 
-import { greet, greetInHindi } from './App.js';
-import { describe, test } from 'node:test';
-import assert from 'node:assert';
-
-describe('greet function', () => {
-
-    // Test Case 1: English greeting
-    test('greet function should return a greeting message', () => {
-        const name = 'John';
-        const expectedGreeting = `Hello, ${name}!`;
-        const actualGreeting = greet(name);
-
-        assert.strictEqual(actualGreeting, expectedGreeting);
+describe("order feature", () => {
+  test("that it process the order corretly", () => {
+    // mocked function
+    const mockedProcessPayment = mock.fn((amount) => {
+      console.log("i am mocked process payment function");
+      return { id: "123", amount };
     });
+    const expected = { id: "123", amount: 5000 };
+    const actual = processOrder(
+      { amount: 5000 },
+      { processPayment: mockedProcessPayment },
+    );
+    assert.deepStrictEqual(actual, expected);
+  });
+});
 
-    // Test Case 2: Hindi greeting
-    test('greet return in hindi', () => {
-        const name = 'John';
-        const expectedGreeting = `नमस्ते, ${name}!`;
-        const actualGreeting = greetInHindi(name);
+describe("Greeting functions", () => {
+  test("greet returns the correct greeting", () => {
+    const expected = `Hello, World!`;
+    const actual = greet("World");
 
-        assert.strictEqual(actualGreeting, expectedGreeting);
-    });
+    assert.strictEqual(actual, expected);
+  });
 
+  test("greet returns in hindi", () => {
+    const expected = `Namaste, Duniya!`;
+    const actual = greetInHindi("Duniya");
+    assert.strictEqual(actual, expected);
+  });
 });
